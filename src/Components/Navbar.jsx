@@ -17,7 +17,6 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black bg-opacity-40 backdrop-blur-md shadow-md">
       <div className="container mx-auto px-6 lg:px-12 flex items-center justify-between h-16">
-        {/* Logo */}
         <NavLink to="/" className="text-2xl font-extrabold text-white">
           Alex<span className="text-blue-400">K.</span>
         </NavLink>
