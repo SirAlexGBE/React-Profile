@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section id="home" className="flex flex-col lg:flex-row min-h-screen bg-gradient-to-r from-gray-950 via-gray-400 to-blue-800">
       <div className="lg:w-1/2 text-white flex flex-col justify-center px-8 lg:px-16 py-16">
-        <h2 className="text-sm uppercase text-gray-400 mb-2">Hello, I’m</h2>
+        <h2 className="text-md uppercase text-gray-400 mb-2">Hello, I’m</h2>
         <h1 className="text-5xl sm:text-6xl font-extrabold mb-4">
           Alex <span className="text-black">Kandel</span>
         </h1>
