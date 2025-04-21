@@ -25,7 +25,7 @@ const FloatingDonut = ({size, color, duration, style}) => {
       style={{
         position: "absolute",
         borderRadius: "50%",
-        background: `radial-gradient(circle, transparent 60%, ${color} 60%)`,
+        background: `radial-gradient(circle, transparent 40%, ${color} 60%)`,
         filter: "blur(1px)",
         opacity: 0.2,
         pointerEvents: "none",
@@ -47,18 +47,6 @@ export default function Hero() {
         duration={12}
         style={{left: "30%", top: "30%"}}
       />
-      <FloatingDonut
-        size="100px"
-        color="rgba(96, 165, 250, 0.3)" // blue-400 with opacity
-        duration={15}
-        style={{left: "70%", top: "60%"}}
-      />
-      <FloatingDonut
-        size="100px"
-        color="rgba(134, 239, 172, 0.5)" // lime-300 with opacity
-        duration={10}
-        style={{left: "50%", top: "20%"}}
-      />
 
       {/* Content Container */}
       <div className="lg:w-1/2 text-white flex flex-col justify-center px-8 lg:px-16 py-16 relative z-10">
@@ -71,6 +59,12 @@ export default function Hero() {
           <a href="/contact" className="px-6 py-3 bg-lime-400 text-black font-medium rounded-full hover:bg-lime-500 transition hover:scale-105">
             Contact Me
           </a>
+          <FloatingDonut
+            size="100px"
+            color="rgba(96, 165, 250, 0.3)" // blue-400 with opacity
+            duration={15}
+            style={{left: "70%", top: "60%"}}
+          />
           <a href="mailto:Alexkandel03@example.com" className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition  hover:scale-105">
             <Mail className="w-5 h-5 text-white" />
           </a>
@@ -82,6 +76,12 @@ export default function Hero() {
           </a>
         </div>
       </div>
+      <FloatingDonut
+        size="100px"
+        color="rgba(134, 239, 172, 10)" // lime-300 with opacity
+        duration={10}
+        style={{left: "50%", top: "20%"}}
+      />
 
       {/* Image Container */}
       <div className="lg:w-1/2 flex items-center justify-center p-8 lg:p-0 relative z-10">
