@@ -1,8 +1,8 @@
 import React from "react";
-import Abt from "../Components/Abt";
+import AboutSection from "../Components/AboutSection";
 
 const About = () => {
-  return <Abt />;
+  return <AboutSection />;
 };
 
 export default About;

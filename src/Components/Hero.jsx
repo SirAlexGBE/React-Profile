@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import FloatingDonut from "./FloatingDonut";
 export default function Hero() {
   return (
-    <section id="home" className="flex flex-col lg:flex-row min-h-screen bg-gradient-to-r from-gray-950 via-gray-400 to-blue-800 relative overflow-hidden px-4 sm:px-6 md:px-8">
+    <section id="home" className="flex flex-col lg:flex-row min-h-screen bg-gradient-to-r from-gray-950 via-gray-400 to-blue-400 relative overflow-hidden px-4 sm:px-6 md:px-8">
       {/* Background floating elements - adjusted position for all screen sizes */}
       <FloatingDonut size="50px" color="rgba(156, 163, 175, 0.3)" duration={Infinity} style={{left: "10%", top: "20%", display: "block"}} />
 
@@ -17,7 +17,7 @@ export default function Hero() {
         {/* Increased contrast and visibility for small screens */}
         <h2 className="text-md uppercase text-gray-200 font-medium mb-2 bg-opacity-30 inline-block px-2 py-1 rounded">Hello, I'm</h2>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4">
-          Alex <span className="text-black">Kandel</span>
+          Alex <span className="dark:text-blue-400">Kandel</span>
         </h1>
         <p className="text-base sm:text-lg text-white mb-6 sm:mb-8 max-w-md">A Nepal based Web developer passionate about building accessible and user friendly websites.</p>
 
