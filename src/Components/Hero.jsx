@@ -48,12 +48,11 @@ export default function Hero() {
         style={{left: "50%", top: "20%"}}
       />
 
-      {/* Image Container */}
       <div className="lg:w-1/2 flex items-center justify-center p-8 lg:p-0 relative z-10">
-        <motion.div className="w-full lg:w-1/2 flex justify-center lg:justify-end" initial={{opacity: 0, x: 40}} animate={{opacity: 1, x: 0}} transition={{duration: 0.6, delay: 0.2}}>
+        <motion.div className="w-full  lg:w-1/2 flex justify-center lg:justify-end" initial={{opacity: 0, x: 40}} animate={{opacity: 1, x: 0}} transition={{duration: 0.6, delay: 0.2}}>
           <div className="relative w-72 h-110 rounded-2xl overflow-hidden shadow-2xl">
             <img src={profilePic} alt="Alex Kandel" className="object-cover w-full h-full" />
-            <div className="absolute bottom-2 right-2 bg-white text-gray-500 bg-opacity-75 px-3 py-1 rounded-full text-xs font-medium">Based in Nepal 🇳🇵</div>
+            <div className="absolute  hover:scale-105 bottom-2 right-2 bg-white text-gray-500 bg-opacity-75 px-3 py-1 rounded-full text-xs font-medium">Based in Nepal 🇳🇵</div>
           </div>
         </motion.div>
       </div>
