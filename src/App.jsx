@@ -10,8 +10,8 @@ import Navbar from "./Components/Navbar";
 export default function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <main className="pt-16">
+      <main className="min-h-screen">
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
