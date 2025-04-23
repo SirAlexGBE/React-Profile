@@ -27,7 +27,7 @@ export default function Hero() {
             Contact Me
           </a>
 
-          <a href="mailto:Alexkandel03@example.com" className="p-2 sm:p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition hover:scale-105">
+          <a href="mailto:Alexkandel03@gmail.com" className="p-2 sm:p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition hover:scale-105">
             <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
           </a>
 
