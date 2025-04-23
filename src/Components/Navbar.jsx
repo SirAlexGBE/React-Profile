@@ -8,7 +8,6 @@ export default function Navbar() {
     {name: "Home", to: "/"},
     {name: "About", to: "/about"},
     {name: "Projects", to: "/projects"},
-    {name: "Skills", to: "/skills"},
     {name: "Contact", to: "/contact"},
   ];
 
