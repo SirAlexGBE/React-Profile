@@ -1,10 +1,31 @@
-import React from "react";
+import React, {useRef} from "react";
 import {motion} from "framer-motion";
 import {Mail, Phone, MapPin, Github, Linkedin, Twitter, Facebook, Instagram} from "lucide-react";
+import emailjs from "@emailjs/browser";
+import {ToastContainer, toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactSection = () => {
+  const formRef = useRef(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_rnut6fu", "template_u5h7vkk", formRef.current, "Wu6C05dY6FImd7WgE").then(
+      (result) => {
+        console.log(result.text);
+        toast.success("Message sent successfully! 🚀");
+        formRef.current.reset();
+      },
+      (error) => {
+        console.log(error.text);
+        toast.error("Failed to send message. ❌ Please try again.");
+      }
+    );
+  };
+
   return (
-    <section id="contact" className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="contact" className="min-h-screen w-full py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div className="text-center mb-12 md:mb-16" initial={{opacity: 0, y: 20}} animate={{opacity: 1, y: 0}} transition={{duration: 0.5}}>
@@ -18,6 +39,8 @@ const ContactSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Contact Form */}
           <motion.form
+            ref={formRef}
+            onSubmit={sendEmail}
             className="space-y-4 bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 md:p-8"
             initial={{opacity: 0, x: -30}}
             animate={{opacity: 1, x: 0}}
@@ -25,16 +48,22 @@ const ContactSection = () => {
           >
             <input
               type="text"
+              name="name" // 👈 important
               placeholder="Your Name"
+              required
               className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="email"
+              name="email" // 👈 important
+              required
               placeholder="Your Email"
               className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <textarea
+              name="message" // 👈 important
               placeholder="Your Message"
+              required
               rows={5}
               className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -79,10 +108,10 @@ const ContactSection = () => {
               </a>
             </div>
           </motion.div>
+          <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop={false} closeOnClick pauseOnFocusLoss draggable pauseOnHover theme="colored" />
         </div>
       </div>
     </section>
   );
 };
-
 export default ContactSection;
