@@ -1,6 +1,6 @@
 import React from "react";
 import profilePic from "../assets/Profile.jpg";
-import profilePic2 from "../assets/Profile2.jpg";
+import profilePic2 from "../assets/Profile2.JPG";
 import {Github, Linkedin, Mail} from "lucide-react";
 import {motion} from "framer-motion";
 import FloatingDonut from "./FloatingDonut";
