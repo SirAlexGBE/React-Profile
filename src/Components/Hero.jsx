@@ -1,5 +1,6 @@
 import React from "react";
 import profilePic from "../assets/Profile.jpg";
+import profilePic2 from "../assets/Profile2.jpg";
 import {Github, Linkedin, Mail} from "lucide-react";
 import {motion} from "framer-motion";
 import FloatingDonut from "./FloatingDonut";
@@ -50,7 +51,7 @@ export default function Hero() {
           transition={{duration: 0.6, delay: 0.2}}
         >
           <div className="relative w-full max-w-xs sm:max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
-            <img src={profilePic} alt="Alex Kandel" className="object-cover w-full h-full" />
+            <img src={profilePic2} alt="Alex Kandel" className="object-cover w-full h-full" />
             <div className="absolute bottom-2 right-2 bg-white text-gray-500 bg-opacity-75 px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs font-medium hover:scale-105 transition-transform">
               Based in Nepal 🇳🇵
             </div>
