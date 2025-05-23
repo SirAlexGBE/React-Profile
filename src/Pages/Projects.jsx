@@ -62,7 +62,7 @@ const Projects = () => {
       images: [P1, P2, P3],
       githubUrl: "https://github.com/SirAlexGBE/portfolio",
       liveUrl: "https://yalekshkandel.com.np/?i=1",
-      technologies: ["HTML", "CSS", "JS", "PHP", "Bootstrap"],
+      technologies: ["HTML", "CSS", "JS", "PHP"],
     },
     // {
     //   id: 5,
