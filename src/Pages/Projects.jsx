@@ -18,6 +18,13 @@ import rp5 from "../Images/R5.png";
 import P1 from "../Images/P1.png";
 import P2 from "../Images/P2.png";
 import P3 from "../Images/P3.png";
+import TF1 from "../Images/TF1.png";
+import TF2 from "../Images/TF2.png";
+import TF3 from "../Images/TF3.png";
+import TH1 from "../Images/TH1.png";
+import TH2 from "../Images/TH2.png";
+import TH3 from "../Images/TH3.png";
+import TH4 from "../Images/TH4.png";
 
 const Projects = () => {
   const projectsData = [
@@ -64,36 +71,26 @@ const Projects = () => {
       liveUrl: "https://yalekshkandel.com.np/?i=1",
       technologies: ["HTML", "CSS", "JS", "PHP"],
     },
-    // {
-    //   id: 5,
-    //   name: "Cryptocurrency Portfolio Tracker",
-    //   briefDescription: "Advanced crypto portfolio management with market analysis tools",
-    //   detailedDescription:
-    //     "A sophisticated cryptocurrency portfolio tracking application that provides real-time price updates, portfolio performance analytics, market trend analysis, and trading insights. Features include custom alerts, historical data visualization, and multi-exchange integration.",
-    //   images: [
-    //     "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop",
-    //     "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=400&fit=crop",
-    //     "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=400&fit=crop",
-    //   ],
-    //   githubUrl: "https://github.com/username/crypto-portfolio",
-    //   liveUrl: "https://crypto-portfolio-tracker.com",
-    //   technologies: ["React"],
-    // },
-    // {
-    //   id: 6,
-    //   name: "Recipe Sharing Platform",
-    //   briefDescription: "Community-driven recipe platform with meal planning features",
-    //   detailedDescription:
-    //     "A vibrant recipe sharing community platform where users can discover, share, and organize recipes. Features include meal planning, shopping list generation, nutritional information, recipe rating system, and social features for following favorite chefs.",
-    //   images: [
-    //     "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
-    //     "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=400&fit=crop",
-    //     "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
-    //   ],
-    //   githubUrl: "https://github.com/username/recipe-platform",
-    //   liveUrl: "https://recipe-sharing-platform.com",
-    //   technologies: ["React"],
-    // },
+    {
+      id: 5,
+      name: "Task-Flow",
+      briefDescription: "Another basic Chiché Project",
+      detailedDescription: "Basic To Do app with authentication, have features for performing CRUD operations with Tasks.",
+      images: [TF1, TF2, TF3],
+      githubUrl: "https://github.com/SirAlexGBE/TaskFlow",
+
+      technologies: ["React", "Tailwind CSS"],
+    },
+    {
+      id: 6,
+      name: "Tharu Guide Office",
+      briefDescription: "A portolio and website for Tharu Guide Office, Sauraha Chitwan",
+      detailedDescription:
+        "A Project for Tharu Guide Office which is located in sauraha chitwan, Made this project for them according to their needs and requirements of making users able to book different services and also get information about chitwan and Sauraha.",
+      images: [TH1, TH2, TH3, TH4],
+      githubUrl: "https://github.com/SirAlexGBE/Tharu-Guide-Office",
+      technologies: ["Bootstrap", "PHP", "MySQL"],
+    },
   ];
 
   const [selectedProject, setSelectedProject] = useState(null);
@@ -144,7 +141,7 @@ const Projects = () => {
         onClick={() => handleProjectClick(project)}
       >
         <div className="relative overflow-hidden">
-          <img src={project.images[0]} alt={project.name} className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" />
+          <img src={project.images[0]} alt={project.name} className="w-full h-48 object-contain transition-transform duration-300 group-hover:scale-110" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <div className="absolute top-4 right-4 flex gap-2">
             <div className="bg-white/90 backdrop-blur-sm rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg">
@@ -198,7 +195,7 @@ const Projects = () => {
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="relative">
-          <img src={project.images[0]} alt={project.name} className="w-full h-64 object-cover rounded-t-2xl" />
+          <img src={project.images[0]} alt={project.name} className="w-full h-80 object-contain rounded-t-2xl" />
           <button onClick={onClose} className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-colors duration-200">
             <span className="text-xl font-semibold text-gray-700">×</span>
           </button>
@@ -247,7 +244,7 @@ const Projects = () => {
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Project Gallery</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {project.images.slice(1).map((image, index) => (
-                  <img key={index} src={image} alt={`${project.name} screenshot ${index + 2}`} className="w-full h-32 object-cover rounded-lg" />
+                  <img key={index} src={image} alt={`${project.name} screenshot ${index + 2}`} className="w-full h-50 object-contain rounded-lg" />
                 ))}
               </div>
             </div>
