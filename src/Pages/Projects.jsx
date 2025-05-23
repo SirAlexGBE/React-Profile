@@ -23,7 +23,7 @@ import TF2 from "../Images/TF2.png";
 import TF3 from "../Images/TF3.png";
 import TH1 from "../Images/TH1.png";
 import TH2 from "../Images/TH2.png";
-import TH3 from "../Images/TH3.png";
+import TH3 from "../Images/Th3.png";
 import TH4 from "../Images/TH4.png";
 
 const Projects = () => {
