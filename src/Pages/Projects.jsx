@@ -64,36 +64,36 @@ const Projects = () => {
       liveUrl: "https://yalekshkandel.com.np/?i=1",
       technologies: ["HTML", "CSS", "JS", "PHP", "Bootstrap"],
     },
-    {
-      id: 5,
-      name: "Cryptocurrency Portfolio Tracker",
-      briefDescription: "Advanced crypto portfolio management with market analysis tools",
-      detailedDescription:
-        "A sophisticated cryptocurrency portfolio tracking application that provides real-time price updates, portfolio performance analytics, market trend analysis, and trading insights. Features include custom alerts, historical data visualization, and multi-exchange integration.",
-      images: [
-        "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=400&fit=crop",
-      ],
-      githubUrl: "https://github.com/username/crypto-portfolio",
-      liveUrl: "https://crypto-portfolio-tracker.com",
-      technologies: ["React"],
-    },
-    {
-      id: 6,
-      name: "Recipe Sharing Platform",
-      briefDescription: "Community-driven recipe platform with meal planning features",
-      detailedDescription:
-        "A vibrant recipe sharing community platform where users can discover, share, and organize recipes. Features include meal planning, shopping list generation, nutritional information, recipe rating system, and social features for following favorite chefs.",
-      images: [
-        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
-      ],
-      githubUrl: "https://github.com/username/recipe-platform",
-      liveUrl: "https://recipe-sharing-platform.com",
-      technologies: ["React"],
-    },
+    // {
+    //   id: 5,
+    //   name: "Cryptocurrency Portfolio Tracker",
+    //   briefDescription: "Advanced crypto portfolio management with market analysis tools",
+    //   detailedDescription:
+    //     "A sophisticated cryptocurrency portfolio tracking application that provides real-time price updates, portfolio performance analytics, market trend analysis, and trading insights. Features include custom alerts, historical data visualization, and multi-exchange integration.",
+    //   images: [
+    //     "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=400&fit=crop",
+    //     "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=400&fit=crop",
+    //     "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&h=400&fit=crop",
+    //   ],
+    //   githubUrl: "https://github.com/username/crypto-portfolio",
+    //   liveUrl: "https://crypto-portfolio-tracker.com",
+    //   technologies: ["React"],
+    // },
+    // {
+    //   id: 6,
+    //   name: "Recipe Sharing Platform",
+    //   briefDescription: "Community-driven recipe platform with meal planning features",
+    //   detailedDescription:
+    //     "A vibrant recipe sharing community platform where users can discover, share, and organize recipes. Features include meal planning, shopping list generation, nutritional information, recipe rating system, and social features for following favorite chefs.",
+    //   images: [
+    //     "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=400&fit=crop",
+    //     "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=800&h=400&fit=crop",
+    //     "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=400&fit=crop",
+    //   ],
+    //   githubUrl: "https://github.com/username/recipe-platform",
+    //   liveUrl: "https://recipe-sharing-platform.com",
+    //   technologies: ["React"],
+    // },
   ];
 
   const [selectedProject, setSelectedProject] = useState(null);
